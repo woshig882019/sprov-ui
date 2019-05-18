@@ -227,7 +227,7 @@ install_sprov-ui() {
     if [[ -f "/usr/local/sprov-ui/sprov-ui.war" ]]; then
         rm /usr/local/sprov-ui/sprov-ui.war -f
     fi
-    last_version=$(curl --silent "https://api.github.com/repos/sprov065/sprov-ui/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/')
+    last_version=$(curl --silent "https://api.github.com/repos/woshig882019/sprov-ui/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/')
     echo -e "检测到sprov-ui最新版本：${last_version}，开始下载核心文件"
     wget -N --no-check-certificate -O /usr/local/sprov-ui/sprov-ui.jar https://github.com/woshig882019/sprov-ui/releases/download/${last_version}/sprov-ui-${last_version}.jar
     if [[ $? -ne 0 ]]; then
@@ -257,7 +257,7 @@ install_sprov-ui() {
     echo -e "wget -O /usr/bin/sprov-ui -N --no-check-certificate https://github.com/woshig882019/sprov-ui/raw/master/sprov-ui.sh && chmod +x /usr/bin/sprov-ui"
     echo -e ""
     echo -e "若未安装 bbr 等加速工具，推荐使用以下命令一键安装 bbr："
-    echo -e "wget --no-check-certificate https://github.com/sprov065/blog/raw/master/bbr.sh && bash bbr.sh"
+    echo -e "wget --no-check-certificate https://github.com/woshig882019/blog/raw/master/bbr.sh && bash bbr.sh"
     echo -e ""
 }
 
