@@ -5,7 +5,7 @@
 #   Description: install or update sprov-ui
 #   Author: sprov
 #   Blog: https://blog.sprov.xyz
-#   Github - sprov-ui: https://github.com/sprov065/sprov-ui
+#   Github - sprov-ui: https://github.com/woshig882019/sprov-ui
 #=================================================
 
 #       ┏┓    ┏┓  + +
